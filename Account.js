@@ -1,11 +1,13 @@
 "use strict";
 class Account {
-  static index = 0;
   constructor(name, balance) {
     this.id = Account.index++;
     this._name = name;
     this._balance = balance;
   }
+
+  static index = 0;
+
   set name(str) {
     if (typeof str === "string") {
       this._name = str;
@@ -23,6 +25,10 @@ class Account {
     } else {
       throw "Please check your Input. It is should be number.";
     }
+    this._balance = num;
+  }
+  get balance() {
+    return this._balance;
   }
 
   credit(amount) {
