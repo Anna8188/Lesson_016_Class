@@ -135,7 +135,7 @@ console.log(user1.toString()); // Name Surname, 23 years old.
 ];
 ```
 
-[SEE Solution](./PersonStudent.js)
+[SEE Solution](./PersonStudent.JS)
 
 > ### Task 4
 
